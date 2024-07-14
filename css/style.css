@@ -1,0 +1,98 @@
+body{
+  background-color: #0D0D0D;
+  color: #f9f6f6 !important;
+  overflow: hidden;
+}
+
+.nav-tab{
+  background-color: #0D0D0D;
+}
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover {
+   color: #09c !important;
+   transition: color 0.5s;
+}
+
+.logo{
+  width: 50px;
+}
+
+i{
+  cursor: pointer;
+}
+
+.meal-layer{
+  width: 100%;
+  height: 100%;
+  background-color: #f9f6f6ca;
+  top: 100%;
+  transition: .5s;
+}
+
+.meal:hover .meal-layer{
+  top: 0;
+}
+
+.side-nav-menu{
+  z-index: 99;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+#loading{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 9999;
+  background-color:#000;
+  display: flex;
+}
+
+
+
+.loader {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  background: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.loader:after{
+  content: '';
+  position: absolute;
+  inset: 8px;
+  margin: auto;
+  background: #222b32;
+   border-radius: 50%;
+}
+.loader:before{
+  content: '';
+  position: absolute;
+  inset: 0px;
+  margin: auto;
+  background: #de3500;
+  animation: crlMugLoader 2s linear infinite alternate;
+}
+@keyframes crlMugLoader {
+  0%  ,10% { transform: translateY(64px) }
+  90% , 100% { transform: translateY(0px) }
+}
+    
+
+.form-control,
+.form-control:focus {
+   background-color: var(--main-color);
+   color: var(--color-text);
+   border-color: var(--seconde-color);
+}
+
+.form-control::placeholder {
+   color: var(--color-text);
+}
